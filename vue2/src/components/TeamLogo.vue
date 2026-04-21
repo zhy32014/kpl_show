@@ -23,7 +23,7 @@ const logoPath = computed(() => {
 
   // 2. 否则尝试加载本地资源
   try {
-    return require(`../assets/team-logo/${props.teamId}.png`)
+    return require(`../assets/team-logo/${props.teamId.Number}.png`)
   } catch (e) {
     // 3. 降级处理
     return require('../assets/logo.png') 
